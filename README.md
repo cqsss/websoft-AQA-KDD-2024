@@ -29,3 +29,16 @@ The generated JSON file contains the top 100 search results in the following for
 Our retrieval results are stored at `results\nv-embed-v1_title_abs_test.json`.
 
 # Reranking
+
+1. Configure the Retrieval, Data, Result Path:
+     - Open the file `./rerank/rank_llm/scripts/run.sh`.
+     - Locate the variables `retrieval_result_path`. Update it with your path to `nv-embed-v1_title_abs_test.json`
+     - Locate the variables `corpus_path`. Update it with your path to AQA dataset (including `pid_to_title_abs_update_filter.json` and `qa_test_wo_ans_new.txt`).
+     - Locate the variables `result_path`. Update it with the desired output path for the result file.
+2. Run rerank script:
+
+```
+bash ./run.sh
+```
+
+the rerank result is stored at `./results/glm-4-9b-chat_rerank_nv-embed-v1_title_abs_test.txt`
