@@ -8,8 +8,8 @@ Our solution uses a two-stage retrieval-reranking strategy, with the retrieval m
      - Locate the variable `CORPUS_PATH` and `VALIDAT_PATH`. Update them with the paths to your dataset.
 
 2. Configure the Output Path:
-     - Open the files index.py and result.py.
-     - Locate the variables "save_path" and "result_path" respectively. Update them with the desired output paths for the index and result files.
+     - Open the files `./retrieval/nv_index_search.sh`.
+     - Locate the variables `save_path` and `result_path` respectively. Update them with the desired output paths for the index and result files.
 
 3. Run index and retrieval script:
 
